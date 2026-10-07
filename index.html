@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>ABYSSBOUND ONLINE — Web Alpha v0.4</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <section id="boot">
+    <div class="sigil">A</div>
+    <h1>ABYSSBOUND <span>ONLINE</span></h1>
+    <p>WEB ALPHA 0.4 · SHARED BLOOD</p>
+    <div class="actions">
+      <button id="solo">SOLO OYNA</button>
+      <button id="create" class="secondary">ODA KUR</button>
+    </div>
+    <div class="join">
+      <input id="roomCode" maxlength="8" placeholder="ABY-XXXX" />
+      <button id="join" class="secondary">ODAYA KATIL</button>
+    </div>
+    <small id="status">Solo mod hazır</small>
+  </section>
+
+  <main id="game" class="hidden">
+    <canvas id="renderCanvas"></canvas>
+    <header class="top">
+      <div><b>ABYSSBOUND</b><span>ONLINE</span><small>ALPHA v0.4</small></div>
+      <div id="boss" class="boss hidden"><b>THE MOURNER</b><div><i id="bossHp"></i></div></div>
+      <div class="zone">KÜL MEZARLIĞI<br><small id="roomHud">SOLO</small></div>
+    </header>
+    <aside class="quest">Görev: <span id="quest">Rotting Corpse temizle: 0/6</span></aside>
+    <aside id="party" class="party hidden"></aside>
+    <section class="hud">
+      <div class="orb"><span id="hp">540 / 540</span></div>
+      <div class="skills">
+        <button>LMB<small>Temel</small></button>
+        <button>1<small>Cleave</small></button>
+        <button>2<small>Chain</small></button>
+        <button>3<small>Rush</small></button>
+        <button>4<small>Guard</small></button>
+        <button>R<small>Bloodstorm</small></button>
+      </div>
+      <div class="orb rage"><span id="rage">15%</span></div>
+    </section>
+    <div id="toast"></div>
+  </main>
+
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
