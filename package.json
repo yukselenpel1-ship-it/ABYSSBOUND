@@ -1,11 +1,6 @@
 {
-  "name": "abyssbound-online",
-  "version": "0.4.0",
+  "name": "abyssbound-online-web",
+  "version": "0.4.1",
   "private": true,
-  "description": "ABYSSBOUND ONLINE Web Alpha v0.4 — server authoritative co-op combat",
-  "scripts": {
-    "dev": "python3 server.py",
-    "serve": "python3 server.py",
-    "check": "python3 -m py_compile server.py"
-  }
+  "description": "ABYSSBOUND ONLINE static web client"
 }
