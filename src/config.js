@@ -1,0 +1,1 @@
+export const WS_URL = window.ABYSSBOUND_WS_URL || null;
